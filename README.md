@@ -6,7 +6,10 @@ This is a simple website which uses unsplash API to search for photos.
 
 
 ## Unsplash API
-> https://api.unsplash.com
+`https://api.unsplash.com `
+You have to get your API key and insert it to `.env` file in main catalog.
+#### .env file:
+`VITE_API_KEY=YOUR_API_KEY`
 
 ## Instalation
 `npm install`
