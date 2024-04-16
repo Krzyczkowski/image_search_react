@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import axios from "axios";
 import { Form, Button } from "react-bootstrap";
-import "./index.css";
+
 
 const App = () => {
   const API_URL = "https://api.unsplash.com/search/photos";
@@ -74,8 +74,8 @@ const App = () => {
         ))}
       </div>
       <div className="buttons">
-        {page > 1 && <Button onclick= {() => setPage(page - 1)}>Previous</Button>}
-        {page < totalPages && <Button onclick= {() => setPage(page + 1)}>Next</Button>}
+        {page > 1 && <Button onClick= {() => setPage(page - 1)}>Previous</Button>}
+        {page < totalPages && <Button onClick= {() => setPage(page + 1)}>Next</Button>}
       </div>
     </div>
   );
